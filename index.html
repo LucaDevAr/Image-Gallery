@@ -6,8 +6,35 @@
     <title>Image Gallery</title>
     <!----- Import Style Css ----->
     <link rel="stylesheet" href="style.css" />
+    <!----- Import Remix Icon ----->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <div class="hero">
+      <input type="text" placeholder="Search..." />
+      <div class="select-menu">
+        <div class="select">
+          <span>Filter</span>
+          <i class="ri-arrow-down-s-line"></i>
+        </div>
+        <ul class="options">
+          <li class="selected">Todas</li>
+          <li>City</li>
+          <li>Mountain</li>
+          <li>Beach</li>
+          <li>Space</li>
+          <li>Flora</li>
+          <li>Fauna</li>
+          <li>Food</li>
+          <li>Technology</li>
+          <li>Sport</li>
+          <li>Illustration</li>
+        </ul>
+      </div>
+    </div>
     <main class="gallery"></main>
     <!----- Import Script Js ----->
     <script src="script.js"></script>

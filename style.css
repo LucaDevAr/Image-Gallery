@@ -1,0 +1,205 @@
+/* ===== Google Font Import - Poppins ===== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* ===== Format ===== */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  color: #fff;
+}
+
+* {
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ===== Gallery ===== */
+.hero {
+  width: 100%;
+  height: 18rem;
+  background-image: url(/img/bg1.webp);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.select-menu {
+  background: #0a0a10;
+  width: 10rem;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  position: relative;
+  font-weight: bold;
+}
+
+.select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select i {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.options {
+  font-size: 1rem;
+  position: absolute;
+  top: 105%;
+  left: 0;
+  background: #0a0a10;
+  width: 100%;
+  height: 11rem;
+  z-index: 100;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  overflow-y: auto;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.options li {
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.options li:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+.selected {
+  background-color: #fff;
+  color: #0a0a10;
+}
+
+.options::-webkit-scrollbar {
+  width: 20px;
+  background: #0a0a10;
+  border-radius: 2rem;
+}
+
+.options::-webkit-scrollbar-thumb {
+  border: 7px solid #0a0a10;
+  background: #fff;
+  border-radius: 1rem;
+}
+
+input {
+  max-width: 16rem;
+  padding: 1rem;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 2rem;
+  background: #0a0a10;
+  color: #fff;
+}
+
+input::placeholder {
+  color: #ddd;
+}
+
+main {
+  margin: 5rem 0;
+  margin-inline: auto;
+  width: 60%;
+}
+
+main picture {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  transition: 0.5s;
+}
+
+main picture img {
+  width: 100%;
+  display: block;
+  transition: 0.5s;
+}
+
+main picture:hover img {
+  transform: scale(1.1);
+}
+
+main picture:hover .overlay {
+  opacity: 1;
+  pointer-events: initial;
+  bottom: 0;
+}
+
+main picture .overlay {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+  padding: 0.7rem;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, #0000, #000c);
+  transition: 0.5s;
+}
+
+.creator {
+  font-size: 1.2rem;
+}
+
+.ri-camera-fill {
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
+}
+
+.ri-download-line {
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  font-weight: bold;
+  background-color: #fff;
+  color: #0a0a10;
+}
+
+@media (min-width: 560px) {
+  main {
+    column-count: 2;
+    column-gap: 2rem;
+    width: 80%;
+  }
+  input {
+    max-width: 24rem;
+  }
+}
+
+@media (min-width: 720px) {
+  main {
+    column-count: 3;
+  }
+}
+@media (min-width: 920px) {
+  main {
+    column-count: 4;
+    width: 90%;
+  }
+  .modal {
+    padding: 0;
+  }
+}
