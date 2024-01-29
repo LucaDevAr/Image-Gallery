@@ -1,65 +1,156 @@
 const images = [
   {
-    src: "https://img.freepik.com/foto-gratis/torre-eiffel-puente-rio-sena-paris-francia_649448-4968.jpg?size=626&ext=jpg&ga=GA1.1.1730123005.1699373396&semt=sph",
-    categories: ["All", "City"],
-    by: "Chris Pawton",
+    src: "img/adorable-ilustracion-gatitos-jugando-bosque-generative-ai_260559-483.webp",
+    categories: ["All", "Illustration", "Fauna"],
+    by: "Juan García",
   },
   {
-    src: "https://img.freepik.com/foto-gratis/cerezos-flor-primavera-pagoda-chureito-montana-fuji-japon_335224-213.jpg?size=626&ext=jpg&ga=GA1.1.1730123005.1699373396&semt=sph",
+    src: "img/torre-eiffel-puente-rio-sena-paris-francia_649448-4968.jpg",
     categories: ["All", "City"],
-    by: "Toyotaro Bachira",
+    by: "Mia Patel",
   },
   {
-    src: "https://img.freepik.com/fotos-premium/vista-aerea-obelisco-buenos-aires-dron_686512-17.jpg?size=626&ext=jpg&ga=GA1.1.1730123005.1699373396&semt=ais",
-    categories: ["All", "City"],
-    by: "Tomas Martinez",
+    src: "img/loro-colorido-pico-negro-plumas-amarillas-verdes_1340-28847.jpg",
+    categories: ["All", "Fauna"],
+    by: "Yuki Tanaka",
   },
   {
-    src: "https://img.freepik.com/foto-gratis/hermosa-foto-colinas-cubiertas-hierba-cubiertas-arboles-cerca-montanas-dolomitas-italia_181624-24400.jpg?size=626&ext=jpg&ga=GA1.1.1730123005.1699373396&semt=sph",
+    src: "img/cerezos-flor-primavera-pagoda-chureito-montana-fuji-japon_335224-213.jpg",
+    categories: ["All", "City", "Flora"],
+    by: "Maria Santos",
+  },
+  {
+    src: "img/energia-nuclear-ia-innovacion-futura-tecnologia-disruptiva_53876-129784.webp",
+    categories: ["All", "Technology"],
+    by: "Ahmed Ali",
+  },
+  {
+    src: "img/tiro-vertical-foret-soignes-belgica-bruselas-sol-brillando-traves-ramas_181624-5081.jpg",
+    categories: ["All", "Flora"],
+    by: "Sofia Rossi",
+  },
+  {
+    src: "img/vista-aerea-obelisco-buenos-aires-dron_686512-17.webp",
+    categories: ["All", "City"],
+    by: "Carlos Silva",
+  },
+  {
+    src: "img/hermosa-foto-colinas-cubiertas-hierba-cubiertas-arboles-cerca-montanas-dolomitas-italia_181624-24400.jpg",
+    categories: ["All", "Mountain", "Flora"],
+    by: "Andrei Ivanov",
+  },
+  {
+    src: "img/experiencia-programacion-persona-que-trabaja-codigos-computadora_23-2150010144.jpg",
+    categories: ["All", "Technology"],
+    by: "Gabriela Fernandez",
+  },
+  {
+    src: "img/disparo-vertical-dolomitas-rodeado-vegetacion-tirol-sur-italia_181624-59830.jpg",
     categories: ["All", "Mountain"],
-    by: "Joshep Mcnain",
+    by: "Cheng Wei",
   },
   {
-    src: "https://img.freepik.com/foto-gratis/disparo-vertical-dolomitas-rodeado-vegetacion-tirol-sur-italia_181624-59830.jpg?size=626&ext=jpg&ga=GA1.1.1730123005.1699373396&semt=sph",
-    categories: ["All", "Mountain"],
-    by: "Carlito Borges",
+    src: "img/grupo-atletas-diversos-sentados-juntos_53876-146063.jpg",
+    categories: ["All", "Sport"],
+    by: "Leila Kowalski",
   },
   {
-    src: "https://img.freepik.com/fotos-premium/lineas-contorno-topograficas-azules-ilustracion-abstracta-montana-3d_926199-714073.jpg?size=626&ext=jpg&ga=GA1.1.1730123005.1699373396&semt=sph",
+    src: "img/lineas-contorno-topograficas-azules-ilustracion-abstracta-montana-3d_926199-714073.webp",
     categories: ["All", "Mountain", "Illustration"],
-    by: "Eliana Monserrat",
+    by: "Aisha Khan",
   },
   {
-    src: "https://img.freepik.com/foto-gratis/playa-tropical_74190-188.jpg?size=626&ext=jpg&ga=GA1.1.1730123005.1699373396&semt=sph",
+    src: "img/competimos-forma-amistosa-foto-pareja-joven-atractiva-entrenando-maraton-al-aire-libre_590464-6852.webp",
+    categories: ["All", "Sport"],
+    by: "Lars Jensen",
+  },
+  {
+    src: "img/vector_837074-410.webp",
+    categories: ["All", "Illustration", "Fauna"],
+    by: "Elena Petrov",
+  },
+  {
+    src: "img/cerca-deliciosa-preparacion-comidas_23-2149059109.jpg",
+    categories: ["All", "Food"],
+    by: "Jamal Hussein",
+  },
+  {
+    src: "img/girafa-montana-contra-cielo_1048944-164655.jpg",
+    categories: ["All", "Fauna", "Mountain"],
+    by: "Isabella Ferrari",
+  },
+  {
+    src: "img/fondo-pantalla-telefono-movil-playa-arena-blanca_53876-138183.jpg",
     categories: ["All", "Beach"],
-    by: "Nico Robin",
+    by: "Ahmed Khan",
   },
   {
-    src: "https://img.freepik.com/foto-gratis/disparo-vertical-palmeras-playa-arena_181624-49124.jpg?size=626&ext=jpg&ga=GA1.1.1730123005.1699373396&semt=sph",
-    categories: ["All", "Beach"],
-    by: "Michelle Maxwell",
+    src: "img/globos-aire-caliente-coloridos-sobre-fondo-color-aislado-poster-arte-globo-abstracto_90220-1052.webp",
+    categories: ["All", "Illustration"],
+    by: "Olga Ivanova",
   },
   {
-    src: "https://img.freepik.com/foto-gratis/mar-playa_1203-3516.jpg?size=626&ext=jpg&ga=GA1.1.1730123005.1699373396&semt=sph",
-    categories: ["All", "Beach"],
-    by: "David Salomon",
+    src: "img/disparo-vertical-palmeras-playa-arena_181624-49124.jpg",
+    categories: ["All", "Beach", "Flora"],
+    by: "Miguel Lopez",
   },
   {
-    src: "https://img.freepik.com/foto-gratis/fondo-pantalla-luna-arte-digital_23-2150918873.jpg?size=626&ext=jpg&ga=GA1.1.1730123005.1699373396&semt=sph",
-    categories: ["All", "Space"],
-    by: "Felipe Mitre",
+    src: "img/disparo-enfoque-selectivo-flores-plumeria_181624-49811.jpg",
+    categories: ["All", "Flora"],
+    by: "Mei Ling",
   },
   {
-    src: "https://img.freepik.com/fotos-premium/resumen-espacio-ultraterrestre-fin-nebulosa-galaxia-fondo-generativo-ai_438099-10924.jpg?size=626&ext=jpg&ga=GA1.1.1730123005.1699373396&semt=sph",
+    src: "img/fondo-banner-computacion-nube-ciudad-inteligente_53876-108504.webp",
+    categories: ["All", "Technology", "Illustration"],
+    by: "Alejandro Morales",
+  },
+  {
+    src: "img/mar-playa_1203-3516.webp",
+    categories: ["All", "Beach", "Flora"],
+    by: "Katerina Papadopoulos",
+  },
+  {
+    src: "img/hamburguesa-carne-vista-frontal-tomate-queso-ensalada-piso-oscuro-sandwich-pan-comida-rapida_140725-89548.webp",
+    categories: ["All", "Food"],
+    by: "Ahmed Abdel-Malik",
+  },
+  {
+    src: "img/fondo-pantalla-luna-arte-digital_23-2150918873.jpg",
     categories: ["All", "Space", "Illustration"],
-    by: "Ashrabat Kristv",
+    by: "Ingrid Svensson",
   },
   {
-    src: "https://img.freepik.com/foto-gratis/hermoso-paisaje-montana-cielo-estrellado_23-2150455789.jpg?size=626&ext=jpg&ga=GA1.1.1730123005.1699373396&semt=ais",
+    src: "img/astronauta-explora-espacio-exterior-oscuro-generativo-al_169016-28607.webp",
+    categories: ["All", "Space", "Illustration"],
+    by: "Hiroshi Yamamoto",
+  },
+  {
+    src: "img/hermoso-paisaje-montana-cielo-estrellado_23-2150455783.webp",
     categories: ["All", "Space", "Mountain"],
-    by: "Akira Young",
+    by: "Natasha Patel",
+  },
+  {
+    src: "img/silueta-familia-meerkat-bosque-sabana_1308-87298.jpg",
+    categories: ["All", "Flora", "Fauna", "Illustration"],
+    by: "Rafael Mendoza",
+  },
+  {
+    src: "img/composicion-caramelos-coloridos-vista-superior-diferentes-colores-dulces-deliciosos-caramelos-escritorio-rosa_140725-24940.jpg",
+    categories: ["All", "Food"],
+    by: "Leila Hassan",
+  },
+  {
+    src: "img/vista-lince-salvaje-naturaleza_23-2150779306.jpg",
+    categories: ["All", "Fauna"],
+    by: "Lucas Schmidt",
+  },
+  {
+    src: "img/primer-plano-ciclismo-atleta_23-2150845608.webp",
+    categories: ["All", "Sport"],
+    by: "Camila Costa",
   },
 ];
+
 const $main = document.querySelector("main");
 const $body = document.querySelector("body");
 const $selectMenu = document.querySelector(".select-menu");
@@ -119,13 +210,38 @@ function uploadImages(image) {
   const name = document.createElement("span");
   name.textContent = image.by;
   camera.classList.add("ri-camera-fill");
-  const download = document.createElement("i");
-  download.classList.add("ri-download-line");
+  const link = document.createElement("a");
+  link.setAttribute("href", `${image.src}`);
+  link.setAttribute("download", "");
+  const downloader = document.createElement("i");
+  downloader.classList.add("ri-download-line");
+  link.appendChild(downloader);
   creator.appendChild(camera);
   creator.appendChild(name);
   overlay.appendChild(creator);
-  overlay.appendChild(download);
+  overlay.appendChild(link);
   picture.appendChild(img);
   picture.appendChild(overlay);
   $main.appendChild(picture);
+  picture.addEventListener("click", (e) => {
+    console.log(e.target);
+    if (e.target !== downloader) openModal(picture);
+  });
+}
+
+function openModal(modalImg) {
+  const $pictureImg = modalImg.querySelector("img");
+  const $pictureBy = modalImg.querySelector("span");
+  const $modal = document.querySelector(".modal");
+  const $img = $modal.querySelector("img");
+  const $closeModal = $modal.querySelector(".ri-close-line");
+  const $creator = $modal.querySelector(".creator span");
+  const $link = $modal.querySelector("a");
+  $link.href = $pictureImg.src;
+  $img.src = $pictureImg.src;
+  $creator.textContent = $pictureBy.textContent;
+  $modal.classList.add("open");
+  $closeModal.addEventListener("click", () => {
+    $modal.classList.remove("open");
+  });
 }
